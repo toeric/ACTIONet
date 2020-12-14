@@ -14,7 +14,8 @@ sc
 #sce = import.sce.from.Seurat(ace)
 
 sce <- as.SingleCellExperiment(sc)
-
+sce
+sce
 
 batch_attr = interaction(sce$source, sce$Phase)
 
