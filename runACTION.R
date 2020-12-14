@@ -24,6 +24,7 @@ ACTIONet_results = run.ACTIONet(sce,k_max=strtoi(args[3]),layout_compactness=0,t
 
 ACTIONet_results
 
+str(ACTIONet_results)
 
 print(sprintf("ACTION done !"))
 
