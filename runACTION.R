@@ -26,6 +26,13 @@ ACTIONet_results
 
 str(ACTIONet_results)
 
+#gene_dif = as.matrix(rowMaps(ACTIONet_results)[["unified_feature_specificity"]])
+#write.table(gene_dif, file=sprintf("gene_dif.txt"))
+
+
+#gene_exp = as.matrix(rowMaps(ACTIONet_results)[["unified_feature_profile"]])
+#write.table(gene_exp, file=sprintf("gene_exp.txt"))
+
 print(sprintf("ACTION done !"))
 
 # clustering
@@ -49,4 +56,6 @@ print(sprintf("specificity done !"))
 spe = ACTIONet_results$Leiden_specificity_feature_specificity
 
 write.table(as.matrix(spe), file="specificity.txt", quote=FALSE,sep=",",col.names=TRUE)
+
+
 
